@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>林晓音 · 个人网站</title>
+  <meta name="description" content="林晓音的个人网站 — 独立音乐人、前端开发者" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">晓音</a>
+    <ul class="nav-links">
+      <li><a href="#about">关于</a></li>
+      <li><a href="#music">音乐</a></li>
+      <li><a href="#projects">项目</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">独立音乐人 · 前端开发者</p>
+      <h1 class="hero-title">
+        <span class="line">你好，我是</span>
+        <span class="line accent">林晓音</span>
+      </h1>
+      <p class="hero-desc">
+        用代码构建界面，用旋律记录情绪。<br />
+        相信技术与艺术可以同样温柔。
+      </p>
+      <div class="hero-actions">
+        <a href="#music" class="btn btn-primary">聆听作品</a>
+        <a href="#projects" class="btn btn-ghost">查看项目</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>向下滚动</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>关于我</h2>
+          <p>
+            我是林晓音，来自杭州。白天写 Vue 和 TypeScript，夜晚在卧室里写歌。
+            2022 年开始发布独立 EP《城市晚风》，累计播放超过 50 万次。
+          </p>
+          <p>
+            我喜欢把设计细节做到极致——无论是网页的动效曲线，还是一首歌的和声走向。
+            目前专注于前端工程化与独立音乐创作。
+          </p>
+          <ul class="about-stats">
+            <li><strong>5+</strong><span>年开发经验</span></li>
+            <li><strong>12</strong><span>首原创单曲</span></li>
+            <li><strong>3</strong><span>张 EP 专辑</span></li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="avatar-frame">
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2a5 5 0 0 1 5 5v1a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </div>
+            <div class="avatar-ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section music" id="music">
+    <div class="container">
+      <div class="section-label">Music</div>
+      <h2>最新作品</h2>
+      <div class="music-grid">
+        <article class="music-card featured">
+          <div class="music-cover cover-1">
+            <button class="play-btn" aria-label="播放">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <div class="music-info">
+            <span class="music-type">EP · 2025</span>
+            <h3>城市晚风</h3>
+            <p>六首关于都市孤独与温暖的原创歌曲</p>
+          </div>
+        </article>
+        <article class="music-card">
+          <div class="music-cover cover-2"></div>
+          <div class="music-info">
+            <span class="music-type">单曲 · 2024</span>
+            <h3>凌晨三点的代码</h3>
+            <p>写给每个熬夜 debug 的程序员</p>
+          </div>
+        </article>
+        <article class="music-card">
+          <div class="music-cover cover-3"></div>
+          <div class="music-info">
+            <span class="music-type">单曲 · 2024</span>
+            <h3>西湖雨</h3>
+            <p>江南水墨意境的民谣作品</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2>精选项目</h2>
+      <div class="projects-list">
+        <article class="project-item">
+          <div class="project-num">01</div>
+          <div class="project-body">
+            <h3>WaveForm UI</h3>
+            <p>面向音乐制作人的 Web 音频可视化组件库，支持实时频谱与波形渲染。</p>
+            <div class="project-tags">
+              <span>Vue 3</span><span>Web Audio API</span><span>Canvas</span>
+            </div>
+          </div>
+          <a href="#" class="project-link" aria-label="查看项目">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </article>
+        <article class="project-item">
+          <div class="project-num">02</div>
+          <div class="project-body">
+            <h3>IndieTrack</h3>
+            <p>独立音乐人作品发布平台，集成流媒体分发与粉丝互动功能。</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+            </div>
+          </div>
+          <a href="#" class="project-link" aria-label="查看项目">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </article>
+        <article class="project-item">
+          <div class="project-num">03</div>
+          <div class="project-body">
+            <h3>Portfolio Kit</h3>
+            <p>开源个人网站模板，暗色主题、响应式布局、零依赖纯 HTML/CSS。</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>开源</span>
+            </div>
+          </div>
+          <a href="#" class="project-link" aria-label="查看项目">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="section-label">Contact</div>
+        <h2>一起做点有趣的事</h2>
+        <p>无论是合作写歌、前端项目，还是单纯聊聊技术与音乐，都欢迎联系我。</p>
+        <a href="mailto:hello@xiaoyin.dev" class="btn btn-primary btn-lg">hello@xiaoyin.dev</a>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="网易云音乐">网易云</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Bilibili">Bilibili</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 林晓音 · 用 ❤️ 和 ☕ 制作</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
